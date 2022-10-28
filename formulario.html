@@ -5,36 +5,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
+  <!-- Se modificó la ruta del archivo css -->
+  <link rel="stylesheet" type="text/css" media="screen" href="/styles.css">
   <title>Formulario</title>
 </head>
 <body>
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
 
-  <form class="formulario">
-    Nombre <input type="text" name="name" id="name">
-    <br />
-    Edad <input type="number" name="age" id="age">
-    <br />
-
-    Nacionalidad
+  <form class="formulario" id="registro">
+    <!-- Se metió Name a un label ligado a su input correspondiente -->
+    <label for="name">Nombre</label>
+    <input type="text" name="name" id="name">
+    <!-- Corrección de etiqueta br -->
+    <br>
+    <!-- Se metió Edad a un label ligado a su input correspondiente -->
+    <label for="age">Edad</label>
+    <input type="number" name="age" id="age">
+    <!-- Corrección de etiqueta br -->
+    <br>
+    <!-- Se metió Nacionalidad a un label ligado a su input correspondiente -->
+    <label for="nationality">Nacionalidad</label>
     <select name="nationality" id="nationality">
+      <!-- Se agregó una opción sin valor -->
+      <option value="">--Por favor seleccione una opción--</option>
       <option value="ar">Argentina</option>
       <option value="mx">Mexicana</option>
       <option value="per">Peruana</option>
       <option value="vnzl">Venezolana</option>
     </select>
-    <br />
-    <input type="submit">
+    <!-- Corrección de etiqueta br -->
+    <br>
+    <!-- Se agregó value para el texto del botón -->
+    <input type="submit" value="Enviar">
   </form>
 
   <div>
     <h2>Lista de invitados</h2>
-
   </div>
 
-  <script src="../formulario.js"></script>
+  <!-- Se modificó la ruta del archivo js -->
+  <script src="/formulario.js"></script>
 </body>
 
 </html>
